@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.9.24" apply false
+    kotlin("jvm")
 }
 
 subprojects {
@@ -10,6 +10,15 @@ subprojects {
     }
 
     dependencies {
-        "implementation"("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0")
+        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0")
     }
+}
+dependencies {
+    implementation(kotlin("stdlib-jdk8"))
+}
+repositories {
+    mavenCentral()
+}
+kotlin {
+    jvmToolchain(8)
 }
