@@ -9,11 +9,15 @@ class ScoreBoard(private val skorMentah: List<Int?>) {
     // TODO: Buat property `skorValid` bertipe List<Int> berisi skorMentah
     // tanpa elemen null. Gunakan fungsi filterNotNull().
     // val skorValid: List<Int> = ???
+    val skorValid: List<Int> = skorMentah.filterNotNull()
 
     fun skorKelulusan(batasLulus: Int): List<Int> {
         // TODO: Kembalikan skorValid yang >= batasLulus, diurutkan menurun.
         // Gunakan .filter { ... } dan .sortedDescending()
-        TODO()
+        //TODO()
+        return skorValid
+            .filter { skorValid -> skorValid >= batasLulus }
+            .sortedDescending()
     }
 }
 
@@ -21,6 +25,9 @@ fun cetakRentangGanjil(sampai: Int) {
     // TODO: Cetak semua bilangan GANJIL dari 1 sampai `sampai` (inklusif),
     // dipisah spasi, menggunakan for-loop dengan range ber-step:
     //   for (i in 1..sampai step 2) { ... }
+    for (i in 1..sampai step 2){
+        print("$i ")
+    }
 }
 
 fun main() {
