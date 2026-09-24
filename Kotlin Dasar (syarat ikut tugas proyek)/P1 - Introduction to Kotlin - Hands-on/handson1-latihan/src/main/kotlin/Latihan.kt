@@ -8,7 +8,7 @@ fun describeProfile(nama: String, umur: Int?, kota: String = "Tidak diketahui"):
     //   - "<umur> tahun" jika umur tidak null
     //   - "umur tidak diketahui" jika umur null
     //   Gunakan safe call (?.) dan elvis operator (?:)
-    val umurText: String? = null
+    //test
 
     // TODO 2: Kembalikan (return) satu String dengan format:
     //   "Nama: <nama>, Umur: <umurText>, Kota: <kota>"
