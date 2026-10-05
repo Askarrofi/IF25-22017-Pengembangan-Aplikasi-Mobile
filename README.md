@@ -62,6 +62,8 @@ Kolom **Minggu RPS** menunjukkan minggu RPS yang menjadi sumber setiap pertemuan
 
 Laporan hasil proyek (5%) dibagikan di pertemuan 9 dan dikumpulkan sebelum pertemuan 16.
 
+Untuk mengikuti proyek kelompok, mahasiswa wajib menyelesaikan seluruh hands-on di `00 Kotlin Dasar/` (lihat [Struktur Repo](#00-kotlin-dasar-syarat-ikut-proyek)).
+
 Proyek kelompok sudah dikerjakan sejak pertemuan 1 lewat checkpoint mingguan. Checkpoint tidak masuk nilai, tetapi menjadi bekal tes lisan.
 
 ## Penilaian
@@ -110,13 +112,39 @@ Setiap kriteria dinilai dengan rubrik empat level: **Sangat baik** (85–100), *
 
 ## Struktur Repo
 
-### Slide
+```
+.
+├── 00 Kotlin Dasar/                        # Kotlin dasar (slide + hands-on), syarat ikut proyek
+├── 01 Slide/                               # slide PDF pertemuan 1–16
+├── 02 Hands-on/                            # proyek hands-on KMP pertemuan 1–10
+├── Kontrak Kuliah PAM IF25-22017.pdf
+├── Rencana Pembelajaran Semester.pdf
+└── README.md
+```
 
-Folder `Slide/` berisi slide PDF untuk kontrak kuliah dan ke-16 pertemuan:
+### Dokumen di root
+
+- `Kontrak Kuliah PAM IF25-22017.pdf` — kontrak kuliah, dibahas di bagian pembuka pertemuan 1.
+- `Rencana Pembelajaran Semester.pdf` — RPS lengkap, sumber data capaian, bobot, dan indikator di atas.
+
+### 00 Kotlin Dasar (syarat ikut proyek)
+
+`00 Kotlin Dasar/` berisi 13 topik slide dan hands-on Kotlin dasar (Kotlin/JVM biasa, bukan KMP) untuk memperkuat fondasi Kotlin. Materi ini dikerjakan mandiri di luar jam kuliah.
+
+**Seluruh hands-on Kotlin Dasar (13 topik × 3 latihan) wajib diselesaikan oleh mahasiswa yang ingin mengikuti proyek kelompok di pertemuan 11–16.** Hands-on ini tidak masuk perhitungan nilai, tetapi menjadi syarat ikut proyek. Ketentuan lengkapnya ada di [`00 Kotlin Dasar/README.md`](00%20Kotlin%20Dasar/README.md).
+
+Topik yang dicakup:
+
+`P1 - Introduction to Kotlin`, `P2 - Object-Oriented Programming`, `P3 - Generics`, `P4 - Collections and co.`, `P5 - Functional Programming`, `P6 - Parallel and Concurrent Programming`, `P7 - Asynchronous Programming in Kotlin`, `P8 - Exceptions`, `P9 - Testing`, `P10 - Build Systems`, `P11 - The Java Virtual Machine and the Kotlin Compiler`, `P12 - Reflection (JVM)`, `P13 - Backend Development Basics`.
+
+Setiap topik punya slide `P{n} - {Topik}.pdf` dan folder `P{n} - {Topik} - Hands-on/` (modul `handson{n}-latihan` dan `handson{n}-solusi`). Solusinya juga di-gitignore.
+
+### 01 Slide
+
+Folder `01 Slide/` berisi slide PDF untuk ke-16 pertemuan:
 
 | File | Pertemuan |
 |---|---|
-| `00 Kontrak Kuliah PAM IF25-22017.pdf` | 1, bagian pembuka |
 | `P1 Kenalan dengan KMP dan Siapkan Alat.pdf` | 1 |
 | `P2 Model Data, Coroutines, dan Flow.pdf` | 2 |
 | `P3 Dasar Compose Multiplatform.pdf` | 3 |
@@ -136,9 +164,9 @@ Folder `Slide/` berisi slide PDF untuk kontrak kuliah dan ke-16 pertemuan:
 
 Seluruh slide memakai aplikasi kelas yang sama, **LaporKampus**, sebagai contoh berjalan dari pertemuan ke pertemuan.
 
-### Hands-on materi (Pertemuan 1–10)
+### 02 Hands-on (Pertemuan 1–10)
 
-Setiap folder `P{n} - {Topik} - Hands-on/` berisi proyek **Kotlin Multiplatform + Compose Multiplatform** nyata (modul `composeApp` dengan `commonMain`/`androidMain`/`iosMain`/`desktopMain`), dengan 3 latihan dan solusinya per pertemuan. Latihan inilah yang diobservasi untuk nilai observasi praktik.
+Setiap folder `02 Hands-on/P{n} - {Topik} - Hands-on/` berisi proyek **Kotlin Multiplatform + Compose Multiplatform** nyata (modul `composeApp` dengan `commonMain`/`androidMain`/`iosMain`/`desktopMain`), dengan 3 latihan dan solusinya per pertemuan. Latihan inilah yang diobservasi untuk nilai observasi praktik.
 
 | Folder | Pertemuan | Topik |
 |---|---|---|
@@ -161,15 +189,3 @@ Catatan:
 - Proyek belum di-build atau diverifikasi penuh, karena lingkungan pembuatannya tidak punya Android SDK atau Xcode. Lakukan Gradle sync di Android Studio sebelum dipakai di kelas.
 
 **Solusi tidak ikut di-commit.** Setiap folder hands-on punya subfolder atau modul `solusi/` (atau `handson{n}-solusi/`) berisi jawaban lengkap. Folder ini di-`.gitignore` di tiap proyek, jadi mahasiswa yang clone repo hanya mendapat soal `latihan/`. Jawaban dipegang dan dibagikan terpisah oleh pengajar.
-
-### Materi suplemen: Kotlin Dasar
-
-`Kotlin Dasar/` berisi 13 pertemuan slide dan hands-on Kotlin dasar (Kotlin/JVM biasa, bukan KMP) untuk memperkuat fondasi Kotlin. Materi ini dipakai mandiri di tiga pertemuan awal, sebelum materi inti KMP makin dalam:
-
-`P1 - Introduction to Kotlin`, `P2 - Object-Oriented Programming`, `P3 - Generics`, `P4 - Collections and co.`, `P5 - Functional Programming`, `P6 - Parallel and Concurrent Programming`, `P7 - Asynchronous Programming in Kotlin`, `P8 - Exceptions`, `P9 - Testing`, `P10 - Build Systems`, `P11 - The Java Virtual Machine and the Kotlin Compiler`, `P12 - Reflection (JVM)`, `P13 - Backend Development Basics`.
-
-Masing-masing punya folder `P{n} - {Topik} - Hands-on/` (modul `handson{n}-latihan` dan `handson{n}-solusi`). Solusinya juga di-gitignore.
-
-### Lainnya
-
-- `RPS_MK_IF25-22017.pdf` — Rencana Pembelajaran Semester lengkap, sumber data capaian, bobot, dan indikator di atas.
