@@ -6,11 +6,12 @@ Kelas ini **tanpa UTS**. Pertemuan 1 sampai 10 adalah materi dengan latihan yang
 
 ## Identitas Mata Kuliah
 
+| DATA | DEKSRIPSI |
 |---|---|
-| Nama MK | Pengembangan Aplikasi Mobile |
-| Kode MK | IF25-22017 |
-| Rumpun MK | Rekayasa Perangkat Lunak & Sistem Informasi |
-| Bobot (SKS) | 3 |
+| Nama | Pengembangan Aplikasi Mobile |
+| Kode | IF25-22017 |
+| Rumpun | Rekayasa Perangkat Lunak dan Sistem Informasi |
+| Bobot (Teori - Praktikum) SKS | 3 (3-0) SKS |
 | Semester | Ganjil/Genap |
 | Matakuliah Syarat | IF25-21012, IF25-21009 |
 | Team Teaching | Muhammad Habib Algifari, S.Kom., M.T.I. |
