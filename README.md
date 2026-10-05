@@ -6,7 +6,6 @@ Kelas ini **tanpa UTS**. Pertemuan 1 sampai 10 adalah materi dengan latihan yang
 
 ## Identitas Mata Kuliah
 
-| | |
 |---|---|
 | Nama MK | Pengembangan Aplikasi Mobile |
 | Kode MK | IF25-22017 |
